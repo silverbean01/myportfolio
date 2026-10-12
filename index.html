@@ -67,34 +67,60 @@
         <span class="project-count">03 / 03</span>
       </div>
       <div class="project-grid">
-        <article class="project-card card-coral">
+        <article class="project-card card-coral" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="project-dialog" data-project-index="0">
           <div class="project-top"><span>01 — Product</span><span>2024</span></div>
           <div class="project-art art-fin">
             <div class="art-phone"><div class="phone-bar"></div><div class="phone-block"></div><div class="phone-line"></div><div class="phone-line short"></div></div>
             <div class="art-circle">pay<br />better</div>
           </div>
-          <div class="project-info"><div><h3>모아페이</h3><p>금융 생활을 가볍게 만드는<br />모바일 결제 경험</p></div><a href="#" class="round-arrow" aria-label="모아페이 프로젝트 보기">↗</a></div>
+          <div class="project-info"><div><h3>모아페이</h3><p>금융 생활을 가볍게 만드는<br />모바일 결제 경험</p></div><span class="round-arrow" aria-hidden="true">↗</span></div>
         </article>
-        <article class="project-card card-lilac">
+        <article class="project-card card-lilac" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="project-dialog" data-project-index="1">
           <div class="project-top"><span>02 — Branding</span><span>2023</span></div>
           <div class="project-art art-routine">
             <div class="routine-title">daily<br /><i>ritual</i></div>
             <div class="routine-sun"></div>
             <span class="routine-label">small steps,<br />big change</span>
           </div>
-          <div class="project-info"><div><h3>리추얼 클럽</h3><p>매일의 작은 습관을 위한<br />브랜드 아이덴티티</p></div><a href="#" class="round-arrow" aria-label="리추얼 클럽 프로젝트 보기">↗</a></div>
+          <div class="project-info"><div><h3>리추얼 클럽</h3><p>매일의 작은 습관을 위한<br />브랜드 아이덴티티</p></div><span class="round-arrow" aria-hidden="true">↗</span></div>
         </article>
-        <article class="project-card card-mint">
+        <article class="project-card card-mint" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="project-dialog" data-project-index="2">
           <div class="project-top"><span>03 — Web / UX</span><span>2022</span></div>
           <div class="project-art art-archive">
             <div class="archive-stamp">COMMON<br />ARCHIVE</div>
             <div class="archive-lines"><span></span><span></span><span></span><span></span></div>
             <div class="archive-shape"></div>
           </div>
-          <div class="project-info"><div><h3>커먼 아카이브</h3><p>동네의 이야기를 기록하는<br />아카이브 웹사이트</p></div><a href="#" class="round-arrow" aria-label="커먼 아카이브 프로젝트 보기">↗</a></div>
+          <div class="project-info"><div><h3>커먼 아카이브</h3><p>동네의 이야기를 기록하는<br />아카이브 웹사이트</p></div><span class="round-arrow" aria-hidden="true">↗</span></div>
         </article>
       </div>
     </section>
+
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
+      <div class="dialog-heading">
+        <div>
+          <p class="dialog-eyebrow" id="project-dialog-type"></p>
+          <h2 id="project-dialog-title"></h2>
+        </div>
+        <button class="dialog-close" type="button" aria-label="프로젝트 상세 닫기" autofocus>×</button>
+      </div>
+      <p class="dialog-description" id="project-dialog-description"></p>
+      <p class="example-notice">담당 역할, 기술, 성과는 원본에 상세 정보가 없어 구성한 예시 데이터입니다.</p>
+      <div class="dialog-details">
+        <section class="dialog-detail">
+          <h3>담당 역할 <span>ROLE</span></h3>
+          <p id="project-dialog-role"></p>
+        </section>
+        <section class="dialog-detail">
+          <h3>사용 기술 <span>TOOLS</span></h3>
+          <ul class="dialog-tags" id="project-dialog-technologies"></ul>
+        </section>
+        <section class="dialog-detail dialog-detail-wide">
+          <h3>주요 성과 <span>OUTCOME</span></h3>
+          <ul class="dialog-outcomes" id="project-dialog-outcomes"></ul>
+        </section>
+      </div>
+    </dialog>
 
     <section class="contact section-wrap" id="contact">
       <div class="contact-inner">
